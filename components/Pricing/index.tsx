@@ -202,7 +202,26 @@ import { useState } from "react";
 import Image from "next/image";
 import SectionHeader from "../Common/SectionHeader";
 
-const Switch = ({ checked, onCheckedChange }) => {
+// const Switch = ({ checked, onCheckedChange }) => {
+//   return (
+//     <label className="relative inline-flex items-center cursor-pointer">
+//       <input
+//         type="checkbox"
+//         checked={checked}
+//         onChange={onCheckedChange}
+//         className="sr-only peer"
+//       />
+//       <div className="w-16 h-8 bg-gray-400 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-400 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full after:absolute after:top-1 after:left-1 after:bg-white after:border after:border-gray-300 after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-blue-600"></div>
+//     </label>
+//   );
+// };
+
+type SwitchProps = {
+  checked: boolean;
+  onCheckedChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+};
+
+const Switch: React.FC<SwitchProps> = ({ checked, onCheckedChange }) => {
   return (
     <label className="relative inline-flex items-center cursor-pointer">
       <input
@@ -215,6 +234,7 @@ const Switch = ({ checked, onCheckedChange }) => {
     </label>
   );
 };
+
 
 const Pricing = () => {
   const [isYearly, setIsYearly] = useState(false);
