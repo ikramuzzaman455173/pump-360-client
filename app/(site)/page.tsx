@@ -1,12 +1,13 @@
-import About from "../../components/About/About";
-import Contact from "../../components/Contact";
-import CTA from "../../components/CTA/Cta";
-import Faq from "../../components/Faq/Faq";
-import Feature from "../../components/Features";
-import FeaturesTab from "../../components/FeaturesTab";
-import HeroSection from "../../components/Hero/HeroSection";
-import Integration from "../../components/Integration";
-import Testimonial from "../../components/Testimonial";
+
+import About from "@/components/About/About";
+import Contact from "@/components/Contact";
+import CTA from "@/components/CTA/Cta";
+import FaqSection from "@/components/Faq/Faq";
+import Feature from "@/components/Features";
+import FeaturesTab from "@/components/FeaturesTab";
+import HeroSection from "@/components/Hero/HeroSection";
+import Integration from "@/components/Integration";
+import Testimonial from "@/components/Testimonial";
 import { Metadata } from "next";
 
 
@@ -27,7 +28,7 @@ export default function Home() {
       {/* <FunFact /> */}
       <Integration />
       <CTA />
-      <Faq />
+      <FaqSection />
       <Testimonial />
       {/* <Pricing /> */}
       <Contact />

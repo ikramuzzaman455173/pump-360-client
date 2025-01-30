@@ -4,7 +4,7 @@ import { useState } from "react";
 import faqData from "./faqData";
 import FaqItem from "./FaqItem";
 
-const Faq = () => {
+const FaqSection = () => {
   // Managing separate states for each column
   const [activeFaqLeft, setActiveFaqLeft] = useState<number | null>(null);
   const [activeFaqRight, setActiveFaqRight] = useState<number | null>(null);
@@ -60,4 +60,4 @@ const Faq = () => {
 };
 
 
-export default Faq;
+export default FaqSection;
