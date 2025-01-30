@@ -1,48 +1,76 @@
 import { Feature } from "@/types/feature";
-import { ShoppingCart, BarChart, Shield, CreditCard, Users, FileText } from "lucide-react";
+import { Gauge, Package, CreditCard, FileSpreadsheet, CalendarDays, TrendingDown, HandCoins, Banknote, ReceiptText, Book } from "lucide-react";
 
 const featuresData: Feature[] = [
   {
     id: 1,
-    icon: <ShoppingCart size={32} />,
-    title: "Point of Sale (POS)",
+    icon: <Gauge size={32} />,
+    title: "Meter Reading",
     description:
-      "Efficiently manage sales transactions, track inventory, and generate real-time invoices with Pump 360's powerful POS system.",
+      "Accurately record fuel meter readings to monitor consumption and prevent discrepancies.",
   },
   {
     id: 2,
-    icon: <BarChart size={32} />,
-    title: "Financial Reporting",
+    icon: <Package size={32} />,
+    title: "Stock Tracking",
     description:
-      "Get detailed financial insights with customizable reports, ensuring better decision-making and compliance.",
+      "Monitor stock levels in real-time, automate reordering, and prevent shortages or overstocking.",
   },
   {
     id: 3,
-    icon: <Shield size={32} />,
-    title: "Data Security",
+    icon: <CreditCard size={32} />,
+    title: "Credit Sales",
     description:
-      "Pump 360 ensures data security with role-based access, encryption, and secure cloud backups.",
+      "Manage credit transactions, track outstanding payments, and ensure timely collections.",
   },
   {
     id: 4,
-    icon: <CreditCard size={32} />,
-    title: "Payment Processing",
+    icon: <FileSpreadsheet size={32} />,
+    title: "Various Reports",
     description:
-      "Seamlessly process multiple payment methods, including credit/debit cards, mobile wallets, and bank transfers.",
+      "Generate customizable reports for sales, expenses, and operational insights to optimize business decisions.",
   },
   {
     id: 5,
-    icon: <Users size={32} />,
-    title: "Customer Management",
+    icon: <CalendarDays size={32} />,
+    title: "Generate Statement",
     description:
-      "Track customer interactions, manage loyalty programs, and provide personalized services with an integrated CRM.",
+      "Create detailed financial statements for customers, suppliers, and internal audits with ease.",
   },
   {
     id: 6,
-    icon: <FileText size={32} />,
-    title: "Inventory Management",
+    icon: <Book size={32} />,
+    title: "Day Book",
     description:
-      "Keep track of stock levels, automate reordering, and prevent stockouts with real-time inventory management.",
+      "Record daily financial transactions systematically for tracking income and expenses.",
+  },
+  {
+    id: 7,
+    icon: <TrendingDown size={32} />,
+    title: "Day-wise Loss/Gain",
+    description:
+      "Analyze daily profit or loss trends to improve financial performance and decision-making.",
+  },
+  {
+    id: 8,
+    icon: <HandCoins size={32} />,
+    title: "Receivable & Payable Loan Management",
+    description:
+      "Track loans, manage payables and receivables, and streamline financial obligations.",
+  },
+  {
+    id: 9,
+    icon: <Banknote size={32} />,
+    title: "Cash & Bank Flow",
+    description:
+      "Monitor cash inflows and outflows, manage bank transactions, and maintain liquidity.",
+  },
+  {
+    id: 10,
+    icon: <ReceiptText size={32} />,
+    title: "Purchase Invoice & Bill Register",
+    description:
+      "Maintain records of purchases, track supplier invoices, and manage billing efficiently.",
   },
 ];
 

@@ -8,7 +8,11 @@ import { motion } from "framer-motion";
 
 const FeaturesTab = () => {
   const [currentTab, setCurrentTab] = useState("tabOne");
-
+  const tabData = [
+    { id: "tabOne", label: "Accounts / Finance" },
+    { id: "tabTwo", label: "Inventory & Sales Management" },
+    { id: "tabThree", label: "Salient Features" }
+  ];
   return (
     <>
       {/* <!-- ===== Features Tab Start ===== --> */}
@@ -30,17 +34,17 @@ const FeaturesTab = () => {
           </div>
 
           {/* <!-- Tab Menues Start --> */}
-          <motion.div
+          {/* <motion.div
             variants={{
               hidden: {
                 opacity: 0,
-                y: -20,
+                y: -20
               },
 
               visible: {
                 opacity: 1,
-                y: 0,
-              },
+                y: 0
+              }
             }}
             initial="hidden"
             whileInView="visible"
@@ -63,7 +67,7 @@ const FeaturesTab = () => {
               </div>
               <div className="md:w-3/5 lg:w-auto">
                 <button className="text-sm font-medium text-black dark:text-white xl:text-regular">
-                  Clean User Interface
+                  Accounts / Finance
                 </button>
               </div>
             </div>
@@ -82,7 +86,7 @@ const FeaturesTab = () => {
               </div>
               <div className="md:w-3/5 lg:w-auto">
                 <button className="text-sm font-medium text-black dark:text-white xl:text-regular">
-                  Essential Business Pages
+                  Inventory & Sales Management
                 </button>
               </div>
             </div>
@@ -101,11 +105,49 @@ const FeaturesTab = () => {
               </div>
               <div className="md:w-3/5 lg:w-auto">
                 <button className="text-sm font-medium text-black dark:text-white xl:text-regular">
-                  Fully Functional Integrations
+                  Salient Features
                 </button>
               </div>
             </div>
+          </motion.div> */}
+
+          {/* <!-- Tab Menus Start --> */}
+          <motion.div
+            variants={{
+              hidden: { opacity: 0, y: -20 },
+              visible: { opacity: 1, y: 0 }
+            }}
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 0.5, delay: 0.1 }}
+            viewport={{ once: true }}
+            className="animate_top mb-15 flex flex-wrap justify-center rounded-[10px] border border-stroke bg-white shadow-solid-5 dark:border-strokedark dark:bg-blacksection dark:shadow-solid-6 md:flex-nowrap md:items-center lg:gap-7.5 xl:mb-21.5 xl:gap-12.5"
+          >
+            {tabData.map((tab, index) => (
+              <div
+                key={tab.id}
+                onClick={() => setCurrentTab(tab.id)}
+                className={`relative flex w-full cursor-pointer items-center gap-4 border-b border-stroke px-6 py-2 last:border-0 dark:border-strokedark md:w-auto md:border-0 xl:px-13.5 xl:py-5 ${
+                  currentTab === tab.id
+                    ? "active before:absolute before:bottom-0 before:left-0 before:h-1 before:w-full before:rounded-tl-[4px] before:rounded-tr-[4px] before:bg-primary"
+                    : ""
+                }`}
+              >
+                <div className="flex h-12.5 w-12.5 items-center justify-center rounded-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection">
+                  <p className="text-metatitle3 font-medium text-black dark:text-white">
+                    {String(index + 1).padStart(2, "0")}
+                  </p>
+                </div>
+                <div className="md:w-3/5 lg:w-auto">
+                  <button className="text-sm font-medium text-black dark:text-white xl:text-regular">
+                    {tab.label}
+                  </button>
+                </div>
+              </div>
+            ))}
           </motion.div>
+          {/* <!-- Tab Menus End --> */}
+
           {/* <!-- Tab Menues End --> */}
 
           {/* <!-- Tab Content Start --> */}
@@ -113,13 +155,13 @@ const FeaturesTab = () => {
             variants={{
               hidden: {
                 opacity: 0,
-                y: -20,
+                y: -20
               },
 
               visible: {
                 opacity: 1,
-                y: 0,
-              },
+                y: 0
+              }
             }}
             initial="hidden"
             whileInView="visible"

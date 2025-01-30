@@ -15,7 +15,7 @@ const Feature = () => {
             headerInfo={{
               title: "PUMP 360 FEATURES",
               subtitle: "Core Features of Pump 360 ERP",
-              description: `Pump 360 is an all-in-one Accounting POS ERP software, offering advanced features such as inventory management, financial reporting, invoicing, and real-time analytics. Designed to streamline business operations with seamless automation and integration capabilities.`
+              description: `Make your fuel station management easier, automated, and more accurate with Pum360. Our software allows you to efficiently manage all accounts and operations of your refueling station`
             }}
           />
           {/* <!-- Section Title End --> */}
