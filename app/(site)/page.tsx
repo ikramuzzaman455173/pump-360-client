@@ -12,10 +12,11 @@ import { Metadata } from "next";
 
 
 export const metadata: Metadata = {
-  title: "Next.js Starter Template for SaaS Startups - Solid SaaS Boilerplate",
-  description: "This is Home for Solid Pro"
-  // other metadata
+  title: "Pum360 - Smart Fuel Station Management Software",
+  description: "Pum360 is an advanced fuel station management system that streamlines sales, inventory, and financial operations with a user-friendly dashboard.",
+  keywords: "fuel station software, gas station management, Pum360, fuel station POS, inventory tracking, fuel sales management, petrol pump software, gas station automation",
 };
+
 
 export default function Home() {
   return (
