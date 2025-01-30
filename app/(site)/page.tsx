@@ -9,20 +9,20 @@ import Integration from "@/components/Integration";
 // import Pricing from "@/components/Pricing";
 import Contact from "@/components/Contact";
 // import Blog from "@/components/Blog";
-import Faq from "@/components/FAQ/Faq";
-import Hero from "@/components/Hero/HeroSection";
+import Faq from "@/components/Faq/Faq";
+import HeroSection from "@/components/Hero/HeroSection";
 import Testimonial from "@/components/Testimonial";
 
 export const metadata: Metadata = {
   title: "Next.js Starter Template for SaaS Startups - Solid SaaS Boilerplate",
-  description: "This is Home for Solid Pro",
+  description: "This is Home for Solid Pro"
   // other metadata
 };
 
 export default function Home() {
   return (
     <main>
-      <Hero />
+      <HeroSection />
       {/* <Brands /> */}
       <Feature />
       <About />

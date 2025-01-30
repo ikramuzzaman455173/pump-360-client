@@ -1,11 +1,11 @@
-import Faq from "@/components/FAQ/Faq"
+import Faq from "@/components/Faq/Faq";
 
-const page= () => {
+const page = () => {
   return (
     <div className="md:mt-[150px] mt-[130px]">
-      <Faq/>
+      <Faq />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;
